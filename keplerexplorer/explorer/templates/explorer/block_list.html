@@ -68,11 +68,11 @@
 	  <div class="col-sm-6 col-md-3">
 		<div class="card" title="Actual vs. Expected Block Difficulty">
 		  <div class="card-header">
-			Latest Block Difficulty
+			Network Difficulty
 		  </div>
 		  <div class="card-body">
 			<h4 class="card-title">
-			  {{ latest_block.difficulty | intcomma }} / {{ latest_block.target_difficulty | intcomma }}
+			  {{ latest_block.target_difficulty | intcomma }}
 			</h4>
 		  </div>
 		</div>
@@ -84,7 +84,7 @@
 			Emission
 		  </div>
 		  <div class="card-body">
-			<h4 class="card-title">{{ total_emission | KMW }}</h4>
+			<h4 class="card-title">{{ total_emission }} KMW</h4>
 		  </div>
 		</div>
 	  </div>
