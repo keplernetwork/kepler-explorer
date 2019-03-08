@@ -165,7 +165,7 @@ class BlockList(ListView):
         if Block.objects.exists():
             context["highest_block"] = Block.objects.order_by("height").last()
             context["latest_block"] = Block.objects.order_by("timestamp").last()
-            context["total_emission"] = Block.objects.order_by("total_difficulty").last().height * 60
+            context["total_emission"] = Block.objects.order_by("total_difficulty").last().height * 1000
 
             context["competing_chains"] = Block.objects \
                                                .filter(height__gte=context["highest_block"].height - 60) \
