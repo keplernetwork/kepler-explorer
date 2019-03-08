@@ -10,7 +10,7 @@ development.
 ** Bugs, Feature Requests, etc.
 
 Please report bugs, feature requests or feedback
-[[https://github.com/mimblewimble/grin-explorer/issues/new][here]] or ping
+[[https://github.com/keplernetwork/kepler-explorer/issues/new][here]] or ping
 me (@hendi) on Gitter.
 
 ** License
@@ -54,7 +54,7 @@ sudo systemctl restart postgresql
 Start `grin-explorer`. Again, ensure you use your own credentials for Django.
 
 #+begin_src sh
-git clone https://github.com/mimblewimble/grin-explorer
+git clone https://github.com/keplernetwork/kepler-explorer
 cd grin-explorer
 python3 -m venv venv
 source venv/bin/activate
