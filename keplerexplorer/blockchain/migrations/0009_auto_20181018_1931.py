@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='block',
             name='scaling_difficulty',
-            field=models.IntegerField(default=29),
+            field=models.BigIntegerField(default=29),
             preserve_default=False,
         ),
     ]

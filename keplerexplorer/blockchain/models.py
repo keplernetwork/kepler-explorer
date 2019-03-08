@@ -68,12 +68,12 @@ class Block(models.Model):
 
     cuckoo_solution = ArrayField(models.IntegerField())
 
-    difficulty = models.IntegerField()
+    difficulty = models.BigIntegerField()
 
     # sum of the target difficulties, not the sum of the actual block difficulties
     total_difficulty = models.BigIntegerField()
 
-    secondary_scaling = models.IntegerField()
+    secondary_scaling = models.BigIntegerField()
 
     total_kernel_offset = models.CharField(max_length=64)
 
