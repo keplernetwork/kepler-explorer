@@ -1,8 +1,8 @@
 * Kepler-Explorer
 
-Kepler-Explorer is the first block explorer for the [[https://kepler-tech.org][Kepler]]
+Kepler-Explorer is the first block explorer for the [[http://kepler.network][Kepler]]
 blockchain. This is the source code for the instance running at 
-[[https://explorer.kepler.network]].
+[[http://explorer.kepler.network]].
 
 I hope it provides a useful service for anybody interested in Kepler and to its
 development.
@@ -10,8 +10,7 @@ development.
 ** Bugs, Feature Requests, etc.
 
 Please report bugs, feature requests or feedback
-[[https://github.com/keplernetwork/kepler-explorer/issues/new][here]] or ping
-me (@hendi) on Gitter.
+[[https://github.com/keplernetwork/kepler-explorer/issues/new][here]].
 
 ** License
 
@@ -74,6 +73,6 @@ python3 ./keplerexplorer/manage.py runserver
 *** Import blockchain
 
 #+begin_src sh
-python3 ./keplerexplorer/manage.py import_from_tip http://127.0.0.1:13413
+python3 ./keplerexplorer/manage.py import_from_tip http://127.0.0.1:7413
 #+end_src
 
