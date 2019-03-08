@@ -2,7 +2,7 @@
 
 Kepler-Explorer is the first block explorer for the [[https://kepler-tech.org][Kepler]]
 blockchain. This is the source code for the instance running at 
-[[https://keplerexplorer.net]].
+[[https://explorer.kepler.network]].
 
 I hope it provides a useful service for anybody interested in Kepler and to its
 development.
