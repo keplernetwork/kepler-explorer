@@ -95,7 +95,7 @@ class Block(models.Model):
 
     @property
     def reward(self):
-        return 60
+        return 1000
 
     @property
     def fees(self):
