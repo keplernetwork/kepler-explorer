@@ -13,38 +13,38 @@ def format_float(f):
 
 
 @register.filter
-def nanogrin(nanogrin):
-    if nanogrin == 0:
-        return grin(0)
+def nanokepler(nanokepler):
+    if nanokepler == 0:
+        return kepler(0)
 
-    if nanogrin < 1000:
-        return "%d ng" % nanogrin
+    if nanokepler < 1000:
+        return "%d ng" % nanokepler
 
-    return microgrin(Decimal(nanogrin) / Decimal(1000))
-
-
-@register.filter
-def microgrin(microgrin):
-    if microgrin == 0:
-        return grin(0)
-
-    if microgrin < 1000:
-        return "%s µg" % format_float(microgrin)
-
-    return milligrin(Decimal(microgrin) / Decimal(1000))
+    return microkepler(Decimal(nanokepler) / Decimal(1000))
 
 
 @register.filter
-def milligrin(milligrin):
-    if milligrin == 0:
-        return grin(0)
+def microkepler(microkepler):
+    if microkepler == 0:
+        return kepler(0)
 
-    if milligrin < 1000:
-        return "%s mg" % format_float(milligrin)
+    if microkepler < 1000:
+        return "%s µg" % format_float(microkepler)
 
-    return grin(Decimal(milligrin) / Decimal(1000))
+    return millikepler(Decimal(microkepler) / Decimal(1000))
 
 
 @register.filter
-def grin(grin):
-    return "%s grin" % format_float(grin)
+def millikepler(millikepler):
+    if millikepler == 0:
+        return kepler(0)
+
+    if millikepler < 1000:
+        return "%s mg" % format_float(millikepler)
+
+    return kepler(Decimal(millikepler) / Decimal(1000))
+
+
+@register.filter
+def kepler(kepler):
+    return "%s kepler" % format_float(kepler)
