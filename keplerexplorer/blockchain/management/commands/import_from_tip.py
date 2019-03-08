@@ -33,7 +33,7 @@ class Command(BaseCommand):
         try:
             data = resp.json()
         except json.decoder.JSONDecodeError:
-            print("Decoding JSON failed (make sure to disable api_secret_path in grin-server.toml")
+            print("Decoding JSON failed (make sure to disable api_secret_path in kepler-server.toml")
             print("resp=%r" % resp.text)
             exit()
 
@@ -62,7 +62,7 @@ class Command(BaseCommand):
         try:
             block_data = resp.json()
         except json.decoder.JSONDecodeError:
-            print("Decoding JSON failed (make sure to set `archive_mode=true` in grin-server.toml")
+            print("Decoding JSON failed (make sure to set `archive_mode=true` in kepler-server.toml")
             print("resp=%r" % resp.text)
             exit()
 

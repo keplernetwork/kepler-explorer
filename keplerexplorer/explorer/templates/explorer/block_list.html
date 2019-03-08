@@ -2,7 +2,7 @@
 
 {% load static %}
 {% load humanize %}
-{% load grin %}
+{% load kepler %}
 {% load shortnaturaltime %}
 
 {% block chart_loader_header %}
@@ -84,7 +84,7 @@
 			Emission
 		  </div>
 		  <div class="card-body">
-			<h4 class="card-title">{{ total_emission | grin }}</h4>
+			<h4 class="card-title">{{ total_emission | kepler }}</h4>
 		  </div>
 		</div>
 	  </div>

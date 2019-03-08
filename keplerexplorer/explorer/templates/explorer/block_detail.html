@@ -2,7 +2,7 @@
 
 {% load static %}
 {% load humanize %}
-{% load grin %}
+{% load kepler %}
 
 {% block content %}
   <br>
@@ -72,11 +72,11 @@
 	</tr>
 	<tr>
 	  <td>Block Reward</td>
-	  <td>{{ blk.reward | grin }}</td>
+	  <td>{{ blk.reward | kepler }}</td>
 	</tr>
 	<tr>
 	  <td>Fees</td>
-	  <td>{{ blk.fees | nanogrin }}</td>
+	  <td>{{ blk.fees | nanokepler }}</td>
 	</tr>
   </table>
 
@@ -141,7 +141,7 @@
 		{% for kernel in blk.kernel_set.all %}
 		  <tr>
 			<td>{{ kernel.features }}</td>
-			<td>{{ kernel.fee | nanogrin }}</td>
+			<td>{{ kernel.fee | nanokepler }}</td>
 			<td>{{ kernel.lock_height }}</td>
 		  </tr>
 		{% endfor %}

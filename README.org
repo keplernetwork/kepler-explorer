@@ -1,8 +1,8 @@
 * Kepler-Explorer
 
-Kepler-Explorer is the first block explorer for the [[https://grin-tech.org][Kepler]]
+Kepler-Explorer is the first block explorer for the [[https://kepler-tech.org][Kepler]]
 blockchain. This is the source code for the instance running at 
-[[https://grinexplorer.net]].
+[[https://keplerexplorer.net]].
 
 I hope it provides a useful service for anybody interested in Kepler and to its
 development.
@@ -15,7 +15,7 @@ me (@hendi) on Gitter.
 
 ** License
 
-grin-explorer is licensed under the terms of the GNU AGPL 3, see the file 
+kepler-explorer is licensed under the terms of the GNU AGPL 3, see the file 
 [[LICENSE]] for details. Basically it allows you to use and modify this code as 
 long as you make all changes available under the same terms. The easiest way to 
 do this is to fork this repo (publically!) and deploy your instance from
@@ -29,7 +29,7 @@ Python >= 3.5 and PostgreSQL >= 9.3 are required.
 
 Kepler is required to run as an archival node and basic auth needs to be disabled
 in its REST API. Set `archive_mode = true` and comment out `api_secret_path` in
-`grin-server.toml` respectively.
+`kepler-server.toml` respectively.
 
 *** Installation
 
@@ -51,11 +51,11 @@ postgres=# \q
 sudo systemctl restart postgresql
 #+end_src
 
-Start `grin-explorer`. Again, ensure you use your own credentials for Django.
+Start `kepler-explorer`. Again, ensure you use your own credentials for Django.
 
 #+begin_src sh
 git clone https://github.com/keplernetwork/kepler-explorer
-cd grin-explorer
+cd kepler-explorer
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -67,13 +67,13 @@ export DB_USER=myuser
 export DB_PASSWORD=mypass
 export DB_HOST=127.0.0.1
 export DB_PORT=5432
-python3 ./grinexplorer/manage.py migrate
-python3 ./grinexplorer/manage.py runserver
+python3 ./keplerexplorer/manage.py migrate
+python3 ./keplerexplorer/manage.py runserver
 #+end_src
 
 *** Import blockchain
 
 #+begin_src sh
-python3 ./grinexplorer/manage.py import_from_tip http://127.0.0.1:13413
+python3 ./keplerexplorer/manage.py import_from_tip http://127.0.0.1:13413
 #+end_src
 
