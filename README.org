@@ -1,10 +1,10 @@
-* Grin-Explorer
+* Kepler-Explorer
 
-Grin-Explorer is the first block explorer for the [[https://grin-tech.org][Grin]]
+Kepler-Explorer is the first block explorer for the [[https://grin-tech.org][Kepler]]
 blockchain. This is the source code for the instance running at 
 [[https://grinexplorer.net]].
 
-I hope it provides a useful service for anybody interested in Grin and to its
+I hope it provides a useful service for anybody interested in Kepler and to its
 development.
 
 ** Bugs, Feature Requests, etc.
@@ -27,7 +27,7 @@ that repo.p
 
 Python >= 3.5 and PostgreSQL >= 9.3 are required.
 
-Grin is required to run as an archival node and basic auth needs to be disabled
+Kepler is required to run as an archival node and basic auth needs to be disabled
 in its REST API. Set `archive_mode = true` and comment out `api_secret_path` in
 `grin-server.toml` respectively.
 
