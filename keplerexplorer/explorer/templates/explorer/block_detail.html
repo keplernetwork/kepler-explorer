@@ -72,7 +72,11 @@
 	</tr>
 	<tr>
 	  <td>Block Reward</td>
-	  <td>{{ blk.reward | kepler }}</td>
+	  {% if blk.height == 0 %}
+		  <td>{{ 42000000 | kepler }}</td>
+	{% else %}
+		  <td>{{ blk.reward | kepler }}</td>
+	{% endif %}
 	</tr>
 	<tr>
 	  <td>Fees</td>
